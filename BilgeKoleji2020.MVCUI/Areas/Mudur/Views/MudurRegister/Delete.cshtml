@@ -1,0 +1,33 @@
+﻿@model BilgeKoleji2020.MODEL.Entities.Register
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Mudur/Views/Shared/_MudurLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                @ViewBag.Title
+            </header>
+            <div class="panel-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>TC Kimlik Numarası : </strong> @Model.TcKimlikNumarasi</li>
+                    <li class="list-group-item"><strong>TC Kimlik Numarası : </strong> @Model.IsimSoyisim</li>
+                    <li class="list-group-item"><strong>TC Kimlik Numarası : </strong> @Model.Cinsiyet</li>
+                    <li class="list-group-item"><strong>TC Kimlik Numarası : </strong> @Model.GeldigiOkul</li>
+                    <li class="list-group-item"><strong>TC Kimlik Numarası : </strong> @Model.CepTelefonu</li>
+                    <li class="list-group-item"><strong>TC Kimlik Numarası : </strong> @Model.DigerTelefon</li>
+                    <li class="list-group-item"><strong>TC Kimlik Numarası : </strong> @Model.EvAdresi</li>
+                    <li class="list-group-item"><strong>TC Kimlik Numarası : </strong> @Model.IlçeIl</li>
+                </ul>
+                @using (Html.BeginForm())
+                {
+                    <button type="submit" class="btn btn-info">Sil</button>
+                    <a href="@Url.Action("Index","Register")" class="btn btn-default">Geri Dön</a>
+                }
+            </div>
+        </section>
+
+    </div>
+</div>

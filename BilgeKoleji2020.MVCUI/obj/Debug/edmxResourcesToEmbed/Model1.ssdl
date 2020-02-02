@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BilgeKoleji2020Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Articles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Header" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Created Date" Type="datetime" Nullable="false" />
+    <Property Name="Owner_ID" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Classes">
+    <Key>
+      <PropertyRef Name="ID1" />
+    </Key>
+    <Property Name="ID1" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Şube" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Created Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Lessons">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DersKodu" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DersAdi" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HaftalikDers" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Created Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OgrenciTCKimlikNumarasi" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OkulNumarasi" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Created Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PreRegister">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TC Kimlik Numarası" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Öğrenci Adı Soyadı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Cinsiyet" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Bitirdiği Okul" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Not Ortalaması" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Veli Adı Soyadı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Cep Telefonu" Type="int" Nullable="false" />
+    <Property Name="Diğer Telefon" Type="int" />
+    <Property Name="Ev Adresi" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="İlçe ve İl" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Role" Type="int" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Created Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Register">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TC Kimlik Numarası" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Adı Soyadı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Cinsiyet" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Geldiği Okul" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Cep Telefonu" Type="int" Nullable="false" />
+    <Property Name="Diğer Telefon" Type="int" />
+    <Property Name="Ev Adresi" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="İlçe ve İl" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Role" Type="int" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Created Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Students">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Okul Numarası" Type="int" Nullable="false" />
+    <Property Name="Sınıf" Type="int" Nullable="false" />
+    <Property Name="Şube" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Adı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Soyadı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Cinsiyet" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Devam Durumu" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Created Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Teachers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Adı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Soyadı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Branş" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Sırası" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Created Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Articles_Students">
+    <End Role="Students" Type="Self.Students" Multiplicity="1" />
+    <End Role="Articles" Type="Self.Articles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Students">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Articles">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Articles_Teachers">
+    <End Role="Teachers" Type="Self.Teachers" Multiplicity="1" />
+    <End Role="Articles" Type="Self.Articles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Teachers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Articles">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Classes_Lessons">
+    <End Role="Lessons" Type="Self.Lessons" Multiplicity="1" />
+    <End Role="Classes" Type="Self.Classes" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Lessons">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Classes">
+        <PropertyRef Name="ID1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Classes_Students">
+    <End Role="Students" Type="Self.Students" Multiplicity="1" />
+    <End Role="Classes" Type="Self.Classes" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Students">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Classes">
+        <PropertyRef Name="ID1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Classes_Teachers">
+    <End Role="Teachers" Type="Self.Teachers" Multiplicity="1" />
+    <End Role="Classes" Type="Self.Classes" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Teachers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Classes">
+        <PropertyRef Name="ID1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Login_PreRegister">
+    <End Role="PreRegister" Type="Self.PreRegister" Multiplicity="1" />
+    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="PreRegister">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Login">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Login_Register">
+    <End Role="Register" Type="Self.Register" Multiplicity="1" />
+    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Register">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Login">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Login_Students">
+    <End Role="Students" Type="Self.Students" Multiplicity="1" />
+    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Students">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Login">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Login_Teachers">
+    <End Role="Teachers" Type="Self.Teachers" Multiplicity="1" />
+    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Teachers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Login">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BilgeKoleji2020ModelStoreContainer">
+    <EntitySet Name="Articles" EntityType="Self.Articles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Classes" EntityType="Self.Classes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Lessons" EntityType="Self.Lessons" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PreRegister" EntityType="Self.PreRegister" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Register" EntityType="Self.Register" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Students" EntityType="Self.Students" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Teachers" EntityType="Self.Teachers" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Articles_Students" Association="Self.FK_Articles_Students">
+      <End Role="Students" EntitySet="Students" />
+      <End Role="Articles" EntitySet="Articles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Articles_Teachers" Association="Self.FK_Articles_Teachers">
+      <End Role="Teachers" EntitySet="Teachers" />
+      <End Role="Articles" EntitySet="Articles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Classes_Lessons" Association="Self.FK_Classes_Lessons">
+      <End Role="Lessons" EntitySet="Lessons" />
+      <End Role="Classes" EntitySet="Classes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Classes_Students" Association="Self.FK_Classes_Students">
+      <End Role="Students" EntitySet="Students" />
+      <End Role="Classes" EntitySet="Classes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Classes_Teachers" Association="Self.FK_Classes_Teachers">
+      <End Role="Teachers" EntitySet="Teachers" />
+      <End Role="Classes" EntitySet="Classes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Login_PreRegister" Association="Self.FK_Login_PreRegister">
+      <End Role="PreRegister" EntitySet="PreRegister" />
+      <End Role="Login" EntitySet="Login" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Login_Register" Association="Self.FK_Login_Register">
+      <End Role="Register" EntitySet="Register" />
+      <End Role="Login" EntitySet="Login" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Login_Students" Association="Self.FK_Login_Students">
+      <End Role="Students" EntitySet="Students" />
+      <End Role="Login" EntitySet="Login" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Login_Teachers" Association="Self.FK_Login_Teachers">
+      <End Role="Teachers" EntitySet="Teachers" />
+      <End Role="Login" EntitySet="Login" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

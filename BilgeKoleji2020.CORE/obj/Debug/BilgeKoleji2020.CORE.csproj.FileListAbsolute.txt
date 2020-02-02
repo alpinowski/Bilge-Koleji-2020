@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.CORE\bin\Debug\BilgeKoleji2020.CORE.dll.config
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.CORE\bin\Debug\BilgeKoleji2020.CORE.dll
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.CORE\bin\Debug\BilgeKoleji2020.CORE.pdb
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.CORE\bin\Debug\EntityFramework.dll
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.CORE\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.CORE\bin\Debug\EntityFramework.xml
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.CORE\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.CORE\obj\Debug\BilgeKoleji2020.CORE.csprojAssemblyReference.cache
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.CORE\obj\Debug\BilgeKoleji2020.CORE.csproj.CopyComplete
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.CORE\obj\Debug\BilgeKoleji2020.CORE.dll
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.CORE\obj\Debug\BilgeKoleji2020.CORE.pdb

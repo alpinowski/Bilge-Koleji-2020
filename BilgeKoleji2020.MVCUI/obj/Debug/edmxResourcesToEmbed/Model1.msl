@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BilgeKoleji2020ModelStoreContainer" CdmEntityContainer="BilgeKoleji2020Entities1">
+    <EntitySetMapping Name="Articles">
+      <EntityTypeMapping TypeName="BilgeKoleji2020Model.Articles">
+        <MappingFragment StoreEntitySet="Articles">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created Date" />
+          <ScalarProperty Name="Owner_ID" ColumnName="Owner_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Classes">
+      <EntityTypeMapping TypeName="BilgeKoleji2020Model.Classes">
+        <MappingFragment StoreEntitySet="Classes">
+          <ScalarProperty Name="ID1" ColumnName="ID1" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Şube" ColumnName="Şube" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lessons">
+      <EntityTypeMapping TypeName="BilgeKoleji2020Model.Lessons">
+        <MappingFragment StoreEntitySet="Lessons">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DersKodu" ColumnName="DersKodu" />
+          <ScalarProperty Name="DersAdi" ColumnName="DersAdi" />
+          <ScalarProperty Name="HaftalikDers" ColumnName="HaftalikDers" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Login">
+      <EntityTypeMapping TypeName="BilgeKoleji2020Model.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="OgrenciTCKimlikNumarasi" ColumnName="OgrenciTCKimlikNumarasi" />
+          <ScalarProperty Name="OkulNumarasi" ColumnName="OkulNumarasi" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PreRegister">
+      <EntityTypeMapping TypeName="BilgeKoleji2020Model.PreRegister">
+        <MappingFragment StoreEntitySet="PreRegister">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TC_Kimlik_Numarası" ColumnName="TC Kimlik Numarası" />
+          <ScalarProperty Name="Öğrenci_Adı_Soyadı" ColumnName="Öğrenci Adı Soyadı" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="Bitirdiği_Okul" ColumnName="Bitirdiği Okul" />
+          <ScalarProperty Name="Not_Ortalaması" ColumnName="Not Ortalaması" />
+          <ScalarProperty Name="Veli_Adı_Soyadı" ColumnName="Veli Adı Soyadı" />
+          <ScalarProperty Name="Cep_Telefonu" ColumnName="Cep Telefonu" />
+          <ScalarProperty Name="Diğer_Telefon" ColumnName="Diğer Telefon" />
+          <ScalarProperty Name="Ev_Adresi" ColumnName="Ev Adresi" />
+          <ScalarProperty Name="İlçe_ve_İl" ColumnName="İlçe ve İl" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Register">
+      <EntityTypeMapping TypeName="BilgeKoleji2020Model.Register">
+        <MappingFragment StoreEntitySet="Register">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TC_Kimlik_Numarası" ColumnName="TC Kimlik Numarası" />
+          <ScalarProperty Name="Adı_Soyadı" ColumnName="Adı Soyadı" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="Geldiği_Okul" ColumnName="Geldiği Okul" />
+          <ScalarProperty Name="Cep_Telefonu" ColumnName="Cep Telefonu" />
+          <ScalarProperty Name="Diğer_Telefon" ColumnName="Diğer Telefon" />
+          <ScalarProperty Name="Ev_Adresi" ColumnName="Ev Adresi" />
+          <ScalarProperty Name="İlçe_ve_İl" ColumnName="İlçe ve İl" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="BilgeKoleji2020Model.Students">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Okul_Numarası" ColumnName="Okul Numarası" />
+          <ScalarProperty Name="Sınıf" ColumnName="Sınıf" />
+          <ScalarProperty Name="Şube" ColumnName="Şube" />
+          <ScalarProperty Name="Adı" ColumnName="Adı" />
+          <ScalarProperty Name="Soyadı" ColumnName="Soyadı" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="Devam_Durumu" ColumnName="Devam Durumu" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="BilgeKoleji2020Model.Teachers">
+        <MappingFragment StoreEntitySet="Teachers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adı" ColumnName="Adı" />
+          <ScalarProperty Name="Soyadı" ColumnName="Soyadı" />
+          <ScalarProperty Name="Branş" ColumnName="Branş" />
+          <ScalarProperty Name="Sırası" ColumnName="Sırası" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

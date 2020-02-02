@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\bin\Debug\BilgeKoleji2020.MAPS.dll.config
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\bin\Debug\BilgeKoleji2020.MAPS.dll
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\bin\Debug\BilgeKoleji2020.MAPS.pdb
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\bin\Debug\BilgeKoleji2020.CORE.dll
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\bin\Debug\BilgeKoleji2020.MODEL.dll
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\bin\Debug\EntityFramework.dll
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\bin\Debug\BilgeKoleji2020.CORE.pdb
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\bin\Debug\BilgeKoleji2020.CORE.dll.config
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\bin\Debug\BilgeKoleji2020.MODEL.pdb
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\bin\Debug\BilgeKoleji2020.MODEL.dll.config
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\bin\Debug\EntityFramework.xml
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\obj\Debug\BilgeKoleji2020.MAPS.csprojAssemblyReference.cache
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\obj\Debug\BilgeKoleji2020.MAPS.csproj.CopyComplete
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\obj\Debug\BilgeKoleji2020.MAPS.dll
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.MAPS\obj\Debug\BilgeKoleji2020.MAPS.pdb
