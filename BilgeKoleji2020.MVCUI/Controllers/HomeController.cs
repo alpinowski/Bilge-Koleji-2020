@@ -1,4 +1,5 @@
 ﻿using BilgeKoleji2020.MODEL.Entities;
+using BilgeKoleji2020.SERVICE.Option;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,11 @@ using System.Web.Mvc;
 
 namespace BilgeKoleji2020.MVCUI.Controllers
 {
+    
     public class HomeController : Controller
     {
-        
+        PreRegisterService db = new PreRegisterService();
+
         public ActionResult HomePage()
         {
             return View();
@@ -29,16 +32,17 @@ namespace BilgeKoleji2020.MVCUI.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult PreRegister(PreRegister model, HttpPostedFileBase User) 
+        public ActionResult PreRegister(PreRegister register) 
         {
-           
-            
-            return View("RegisterOK");
-        }
-        public ActionResult PreRegisterOK()
-        {
+            if (ModelState.IsValid)
+            {
+                db.Add(register);
+                db.Save();
+                return RedirectToAction("Index", "MudurRegister", new { Areas = "Mudur" });
+            }
             
             return View();
         }
+        
     }
 }

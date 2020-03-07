@@ -48,6 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\202002271908366_first-migration.cs" />
+    <Compile Include="Migrations\202002271908366_first-migration.Designer.cs">
+      <DependentUpon>202002271908366_first-migration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Context\KolejContext.cs" />
     <Compile Include="Model\SampleData.cs" />
@@ -70,6 +74,11 @@
       <Project>{2FB11F1B-493F-4EE8-8E2E-8BE16BEED6B2}</Project>
       <Name>BilgeKoleji2020.MODEL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202002271908366_first-migration.resx">
+      <DependentUpon>202002271908366_first-migration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -18,3 +18,5 @@ C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.DAL\obj\Debug\BilgeKo
 C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.DAL\obj\Debug\BilgeKoleji2020.DAL.csproj.CopyComplete
 C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.DAL\obj\Debug\BilgeKoleji2020.DAL.dll
 C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.DAL\obj\Debug\BilgeKoleji2020.DAL.pdb
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.DAL\obj\Debug\BilgeKoleji2020.DAL.Migrations.firstmigration.resources
+C:\Users\user\source\repos\BilgeKoleji2020\BilgeKoleji2020.DAL\obj\Debug\BilgeKoleji2020.DAL.csproj.GenerateResource.cache

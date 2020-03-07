@@ -41,11 +41,11 @@ namespace BilgeKoleji2020.MVCUI.Controllers
             //var ogretmen = service.GetByDefault(i => i.UserName == UserName && i.Password == Password);
             if (service.Any(i=>i.Username==UserName && i.Password==Password))
             {
-               return View("Index", "Ogretmen"/*,ogretmen*/);
+                return RedirectToAction("Index", "Home", new { Area = "Ogretmen" });
             }
 
             return View();
-        }
+        } 
 
         public ActionResult Register()
         {
